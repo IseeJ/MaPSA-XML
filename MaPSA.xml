@@ -431,13 +431,15 @@
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
-          <KIND_OF_PART></KIND_OF_PART>
-          <SERIAL_NUMBER></SERIAL_NUMBER>
-          <NAME_LABEL></NAME_LABEL>
+          <KIND_OF_PART>PS-p Sensor</KIND_OF_PART>
+          <SERIAL_NUMBER>|0000|0000|0000|0000|0110|0101|</SERIAL_NUMBER>
+          <NAME_LABEL>35494_016_PSP_MAINL</NAME_LABEL>
+          <BARCODE>35494_016_PSP_MAINL</BARCODE>
+          <MANUFACTURER>Hamamatsu</MANUFACTURER>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
-              <NAME>Chip Posn on Sensor</NAME>
-              <VALUE>9</VALUE>
+              <NAME>Will add attributes later</NAME>
+              <VALUE>0</VALUE>
             </ATTRIBUTE>
           </PREDEFINED_ATTRIBUTES>
         </PART>
