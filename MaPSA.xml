@@ -20,8 +20,8 @@
           <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
+              <NAME>Posn on sensor</NAME>
+              <VALUE>1</VALUE>
             </ATTRIBUTE>
           </PREDEFINED_ATTRIBUTES>
           <PART_EXTENSION>
