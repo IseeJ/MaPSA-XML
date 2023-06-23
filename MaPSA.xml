@@ -27,8 +27,398 @@
         </PART>
       </CHILDREN>
     </PART>
-
+     <PART mode="auto">
+      <KIND_OF_PART>MaPSA</KIND_OF_PART>
+      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
+      <MANUFACTURER>AEMtec</MANUFACTURER>
+      <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
+      <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Chip Posn on Sensor</NAME>
+              <VALUE>1</VALUE>
+            </ATTRIBUTE>
+          </PREDEFINED_ATTRIBUTES>
+        </PART>
       </CHILDREN>
     </PART>
+     <PART mode="auto">
+      <KIND_OF_PART>MaPSA</KIND_OF_PART>
+      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
+      <MANUFACTURER>AEMtec</MANUFACTURER>
+      <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
+      <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Chip Posn on Sensor</NAME>
+              <VALUE>1</VALUE>
+            </ATTRIBUTE>
+          </PREDEFINED_ATTRIBUTES>
+        </PART>
+      </CHILDREN>
+    </PART>
+     <PART mode="auto">
+      <KIND_OF_PART>MaPSA</KIND_OF_PART>
+      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
+      <MANUFACTURER>AEMtec</MANUFACTURER>
+      <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
+      <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Chip Posn on Sensor</NAME>
+              <VALUE>1</VALUE>
+            </ATTRIBUTE>
+          </PREDEFINED_ATTRIBUTES>
+        </PART>
+      </CHILDREN>
+    </PART>
+     <PART mode="auto">
+      <KIND_OF_PART>MaPSA</KIND_OF_PART>
+      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
+      <MANUFACTURER>AEMtec</MANUFACTURER>
+      <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
+      <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Chip Posn on Sensor</NAME>
+              <VALUE>1</VALUE>
+            </ATTRIBUTE>
+          </PREDEFINED_ATTRIBUTES>
+        </PART>
+      </CHILDREN>
+    </PART>
+     <PART mode="auto">
+      <KIND_OF_PART>MaPSA</KIND_OF_PART>
+      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
+      <MANUFACTURER>AEMtec</MANUFACTURER>
+      <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
+      <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Chip Posn on Sensor</NAME>
+              <VALUE>1</VALUE>
+            </ATTRIBUTE>
+          </PREDEFINED_ATTRIBUTES>
+        </PART>
+      </CHILDREN>
+    </PART>
+     <PART mode="auto">
+      <KIND_OF_PART>MaPSA</KIND_OF_PART>
+      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
+      <MANUFACTURER>AEMtec</MANUFACTURER>
+      <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
+      <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Chip Posn on Sensor</NAME>
+              <VALUE>1</VALUE>
+            </ATTRIBUTE>
+          </PREDEFINED_ATTRIBUTES>
+        </PART>
+      </CHILDREN>
+    </PART>
+     <PART mode="auto">
+      <KIND_OF_PART>MaPSA</KIND_OF_PART>
+      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
+      <MANUFACTURER>AEMtec</MANUFACTURER>
+      <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
+      <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Chip Posn on Sensor</NAME>
+              <VALUE>1</VALUE>
+            </ATTRIBUTE>
+          </PREDEFINED_ATTRIBUTES>
+        </PART>
+      </CHILDREN>
+    </PART>
+     <PART mode="auto">
+      <KIND_OF_PART>MaPSA</KIND_OF_PART>
+      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
+      <MANUFACTURER>AEMtec</MANUFACTURER>
+      <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
+      <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Chip Posn on Sensor</NAME>
+              <VALUE>1</VALUE>
+            </ATTRIBUTE>
+          </PREDEFINED_ATTRIBUTES>
+        </PART>
+      </CHILDREN>
+    </PART>
+     <PART mode="auto">
+      <KIND_OF_PART>MaPSA</KIND_OF_PART>
+      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
+      <MANUFACTURER>AEMtec</MANUFACTURER>
+      <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
+      <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Chip Posn on Sensor</NAME>
+              <VALUE>1</VALUE>
+            </ATTRIBUTE>
+          </PREDEFINED_ATTRIBUTES>
+        </PART>
+      </CHILDREN>
+    </PART>
+     <PART mode="auto">
+      <KIND_OF_PART>MaPSA</KIND_OF_PART>
+      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
+      <MANUFACTURER>AEMtec</MANUFACTURER>
+      <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
+      <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Chip Posn on Sensor</NAME>
+              <VALUE>1</VALUE>
+            </ATTRIBUTE>
+          </PREDEFINED_ATTRIBUTES>
+        </PART>
+      </CHILDREN>
+    </PART>
+     <PART mode="auto">
+      <KIND_OF_PART>MaPSA</KIND_OF_PART>
+      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
+      <MANUFACTURER>AEMtec</MANUFACTURER>
+      <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
+      <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Chip Posn on Sensor</NAME>
+              <VALUE>1</VALUE>
+            </ATTRIBUTE>
+          </PREDEFINED_ATTRIBUTES>
+        </PART>
+      </CHILDREN>
+    </PART>
+     <PART mode="auto">
+      <KIND_OF_PART>MaPSA</KIND_OF_PART>
+      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
+      <MANUFACTURER>AEMtec</MANUFACTURER>
+      <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
+      <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Chip Posn on Sensor</NAME>
+              <VALUE>1</VALUE>
+            </ATTRIBUTE>
+          </PREDEFINED_ATTRIBUTES>
+        </PART>
+      </CHILDREN>
+    </PART>
+     <PART mode="auto">
+      <KIND_OF_PART>MaPSA</KIND_OF_PART>
+      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
+      <MANUFACTURER>AEMtec</MANUFACTURER>
+      <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
+      <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Chip Posn on Sensor</NAME>
+              <VALUE>1</VALUE>
+            </ATTRIBUTE>
+          </PREDEFINED_ATTRIBUTES>
+        </PART>
+      </CHILDREN>
+    </PART>
+     <PART mode="auto">
+      <KIND_OF_PART>MaPSA</KIND_OF_PART>
+      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
+      <MANUFACTURER>AEMtec</MANUFACTURER>
+      <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
+      <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Chip Posn on Sensor</NAME>
+              <VALUE>1</VALUE>
+            </ATTRIBUTE>
+          </PREDEFINED_ATTRIBUTES>
+        </PART>
+      </CHILDREN>
+    </PART>
+     <PART mode="auto">
+      <KIND_OF_PART>PS-p Sensor</KIND_OF_PART>
+      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
+      <MANUFACTURER>AEMtec</MANUFACTURER>
+      <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
+      <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+              <NAME>Chip Posn on Sensor</NAME>
+              <VALUE>1</VALUE>
+            </ATTRIBUTE>
+          </PREDEFINED_ATTRIBUTES>
+        </PART>
+      </CHILDREN>
+    </PART>
+
+
+    
   </PARTS>
 </ROOT>
