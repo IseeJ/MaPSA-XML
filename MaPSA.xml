@@ -42,12 +42,12 @@
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
-          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <SERIAL_NUMBER>1207968604</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_03_505</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
               <NAME>Chip Posn on Sensor</NAME>
-              <VALUE>1</VALUE>
+              <VALUE>16</VALUE>
             </ATTRIBUTE>
           </PREDEFINED_ATTRIBUTES>
         </PART>
