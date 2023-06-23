@@ -24,9 +24,6 @@
               <VALUE>1</VALUE>
             </ATTRIBUTE>
           </PREDEFINED_ATTRIBUTES>
-          <PART_EXTENSION>
-            <HAS_PASSED_TEST>T</HAS_PASSED_TEST>
-          </PART_EXTENSION>
         </PART>
       </CHILDREN>
     </PART>
