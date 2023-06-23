@@ -6,6 +6,7 @@
       <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
       <MANUFACTURER>AEMtec</MANUFACTURER>
       <LOCATION>AEMtec</LOCATION>
+      <VERSION>2.0</VERSION>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
