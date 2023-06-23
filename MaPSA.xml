@@ -7,12 +7,7 @@
       <MANUFACTURER>AEMtec</MANUFACTURER>
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
-      <CHILDREN>
-        <PART mode="auto">
-          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
-          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
-          <PREDEFINED_ATTRIBUTES>
+      <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
               <NAME>Chip Row on Wafer</NAME>
               <VALUE>Row 0</VALUE>
@@ -25,6 +20,17 @@
               <NAME>Chip Posn on Wafer</NAME>
               <VALUE>1</VALUE>
             </ATTRIBUTE>
+            <ATTRIBUTE>
+              <NAME>Status</NAME>
+              <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+      </PREDEFINED_ATTRIBUTES>
+      <CHILDREN>
+        <PART mode="auto">
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>1342185729</SERIAL_NUMBER>
+          <NAME_LABEL>N6Y215_01_000</NAME_LABEL>
+          <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
               <NAME>Status</NAME>
               <VALUE>Good</VALUE>
