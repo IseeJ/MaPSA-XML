@@ -9,18 +9,6 @@
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
-              <NAME>Chip Row on Wafer</NAME>
-              <VALUE>Row 0</VALUE>
-            </ATTRIBUTE>
-            <ATTRIBUTE>
-              <NAME>Chip Column on Wafer</NAME>
-              <VALUE>Col 0</VALUE>
-            </ATTRIBUTE>
-            <ATTRIBUTE>
-              <NAME>Chip Posn on Wafer</NAME>
-              <VALUE>1</VALUE>
-            </ATTRIBUTE>
-            <ATTRIBUTE>
               <NAME>Status</NAME>
               <VALUE>Good</VALUE>
             </ATTRIBUTE>
