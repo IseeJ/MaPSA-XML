@@ -1,6 +1,5 @@
 #!pip install dict2xml==1.6.1#
 
-from dict2xml import dict2xml
 from dict2xml import dict2xml as d2x
 data = {
     'PARTS' : {
