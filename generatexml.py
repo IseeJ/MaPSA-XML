@@ -32,7 +32,7 @@ print(d2x(data, wrap="all", indent="  "))
 
 ##Using Elementree##
 
-#repeating MaPSA part
+#repeating MaPSA part  (maybe do for loop instead of copy,paste?)
 
 import xml.etree.ElementTree as ET
 import xml.dom.minidom
@@ -66,7 +66,7 @@ child1_predef_attr = ET.SubElement(child1_predef, "ATTRIBUTE")
 ET.SubElement(child1_predef_attr, "NAME").text = "Chip Posn on Sensor"
 ET.SubElement(child1_predef_attr, "VALUE").text = "1"
 
-
+#############################################################
 # MaPSA 2
 MAPSA2 = ET.SubElement(parts, "PART", mode="auto")
 ET.SubElement(MAPSA2, "KIND_OF_PART").text = "MaPSA"
@@ -87,11 +87,44 @@ ET.SubElement(child2_sub, "KIND_OF_PART").text = "MPA Chip"
 ET.SubElement(child2_sub, "SERIAL_NUMBER").text = "1207968604"
 ET.SubElement(child2_sub, "NAME_LABEL").text = "N6Y215_03_505"
 
-child2_predef = ET.SubElement(child_MAPSA2, "PREDEFINED_ATTRIBUTES")
-child2_predef_attr = ET.SubElement(predef2, "ATTRIBUTE")
+child2_predef = ET.SubElement(child2_sub, "PREDEFINED_ATTRIBUTES")
+child2_predef_attr = ET.SubElement(child2_predef, "ATTRIBUTE")
 ET.SubElement(child2_predef_attr, "NAME").text = "Chip Posn on Sensor"
 ET.SubElement(child2_predef_attr, "VALUE").text = "16"
 
+#############################################################
+#..........
+
+# MaPSA 17
+MAPSA17 = ET.SubElement(parts, "PART", mode="auto")
+ET.SubElement(MAPSA17, "KIND_OF_PART").text = "MaPSA"
+ET.SubElement(MAPSA17, "NAME_LABEL").text = "AEM_35494_016L"
+ET.SubElement(MAPSA17, "MANUFACTURER").text = "AEMtec"
+ET.SubElement(MAPSA17, "LOCATION").text = "AEMtec"
+ET.SubElement(MAPSA17, "VERSION").text = "2.0"
+
+predefMapsa17 = ET.SubElement(MAPSA17, "PREDEFINED_ATTRIBUTES")
+attr17 = ET.SubElement(predefMapsa17, "ATTRIBUTE")
+ET.SubElement(attr17, "NAME").text = "Status"
+ET.SubElement(attr17, "VALUE").text = "Good"
+
+#Sensor 
+child17 = ET.SubElement(MAPSA17, "CHILDREN")
+child17_sub = ET.SubElement(child17, "PART", mode="auto")
+ET.SubElement(child17_sub, "KIND_OF_PART").text = "PS-p Sensor"
+ET.SubElement(child17_sub, "SERIAL_NUMBER").text = "|0000|0000|0000|0000|0110|0101|"
+ET.SubElement(child17_sub, "NAME_LABEL").text = "35494_016_PSP_MAINL"
+ET.SubElement(child17_sub, "BARCODE").text = "35494_016_PSP_MAINL"
+ET.SubElement(child17_sub, "MANUFACTURER").text = "Hamamatsu"
+
+child17_predef = ET.SubElement(child17_sub, "PREDEFINED_ATTRIBUTES")
+child17_predef_attr = ET.SubElement(child17_predef, "ATTRIBUTE")
+ET.SubElement(child17_predef_attr, "NAME").text = "Chip Posn on Sensor"
+ET.SubElement(child17_predef_attr, "VALUE").text = "16"
+
+
+###########################################################
+#print xml format
 xmlstr = ET.tostring(root)
 
 dom = xml.dom.minidom.parseString(xmlstr)
