@@ -61,7 +61,7 @@ def process(line):
     #Sub element of child
     child_sub = ET.SubElement(child, "PART", mode="auto")
     ET.SubElement(child_sub, "KIND_OF_PART").text = "MPA Chip"
-    ET.SubElement(child_sub, "SERIAL_NUMBER").text = "Inpuit Serial Number"
+    ET.SubElement(child_sub, "SERIAL_NUMBER").text = "Input Serial Number"
     ET.SubElement(child_sub, "NAME_LABEL").text = getNameLabel(line)
     
     #Predefined attributes of child
