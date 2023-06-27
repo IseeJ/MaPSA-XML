@@ -10,7 +10,7 @@ with open('mapsa.txt') as file:
     filename = mapsaraw.split(',')[1]
 print(filename)
 
-with open('35494_016_PSP_MANL.txt') as file:
+with open('35494_016_PSP_MAINL.txt') as file:
     myfile = file.read()
     mylines = myfile.split('\n\n')
     del mylines[16]
