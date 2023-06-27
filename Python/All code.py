@@ -1,12 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# # ElementTree
-
-# In[9]:
-
-
-#same as before
+#Parsing file
 with open('mapsa.txt') as file:
     mapsaraw = file.read()
     filename = mapsaraw.split(',')[1]
@@ -42,9 +35,7 @@ def getPosn(line):
     return MPAcoor_num
 
 
-# In[10]:
-
-
+#ElementTree
 import xml.etree.ElementTree as ET
 import xml.dom.minidom
 
@@ -64,10 +55,6 @@ attr1 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
 ET.SubElement(attr1, "NAME").text = "Status"
 ET.SubElement(attr1, "VALUE").text = "Good"
 
-
-# In[11]:
-
-
 def process(line):
     #MPA chip
     child = ET.SubElement(MAPSA, "CHILDREN")
@@ -84,25 +71,18 @@ def process(line):
     ET.SubElement(child_predef_attr, "VALUE").text = getPosn(line)
     return child
 
-
-# In[13]:
-
-
 for line in mylines:
     process(line)
 
 xmlstr = ET.tostring(root)
-
 dom = xml.dom.minidom.parseString(xmlstr)
 xmlfinal = dom.toprettyxml(indent="  ")
 print(xmlfinal)
 
 
-# # Dict2xml
+#...........
 
-# In[14]:
-
-
+#Dict2xml
 #create dictionary
 final_dict = {}
 final_dict['PARTS'] = {}
@@ -112,7 +92,6 @@ final_dict['PARTS']['PART mode="auto"']['NAME_LABEL'] = mapsaraw.split(',')[0]
 final_dict['PARTS']['PART mode="auto"']['MANUFACTURER'] = 'AEMtec'
 final_dict['PARTS']['PART mode="auto"']['LOCATION'] = 'AEMtec'
 final_dict['PARTS']['PART mode="auto"']['VERSION'] = '2.0'
-
 final_dict['PARTS']['PART mode="auto"']['CHILDREN'] ={}
 
 #Add to child dictionary
@@ -132,10 +111,6 @@ from dict2xml import dict2xml
 for line in mylines:
     final_dict['PARTS']['PART mode="auto"']['CHILDREN'] = process(line) 
     print(dict2xml(final_dict))
-
-
-# In[ ]:
-
 
 
 
