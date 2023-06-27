@@ -385,7 +385,7 @@
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
               <NAME>Chip Posn on Sensor</NAME>
-              <VALUE>8/VALUE>
+              <VALUE>8</VALUE>
             </ATTRIBUTE>
           </PREDEFINED_ATTRIBUTES>
         </PART>
