@@ -1,0 +1,29 @@
+Start log for mpa_test_HPK_35494_049L_1_2023_03_17_10_58_06
+Printing EFUSE
+(176, 1, 3, 0, 0, 9)
+Power reading:
+P_dig:  77.662 mW  [V=   0.994 V - I=  78.150 mA]
+P_ana:  72.058 mW  [V=   1.226 V - I=  58.775 mA]
+P_pad:  25.870 mW  [V=   1.229 V - I=  21.050 mA]
+Total: 175.590 mW  [I= 157.975 mA]
+Bias voltage set to BV=-300V, I = -0.26451739999999996 muA
+Skipped test of I2C communication (registers)
+Test pixel masking:
+Unmaskable Pixels:  0 (0.0%)
+Test pixel alive:
+Dead Pixels:        0 (0.0%)
+Inefficient Pixels: 0 (0.0%)
+Noisy Pixels:       0 (0.0%)
+Pre- Trim THR Mean:    83.20 +/-   21.22
+Pre- Trim THR Noise:    3.09 +/-    0.26
+Pre- Trim CAL Mean:    21.99 +/-   10.28
+Pre- Trim CAL Noise:    1.54 +/-    0.78
+Post-Trim THR Mean:    99.09 +/-    3.06
+Post-Trim THR Noise:    3.04 +/-    0.25
+Post-Trim CAL Mean:    13.96 +/-    1.57
+Post-Trim CAL Noise:    1.56 +/-    0.14
+Bias voltage set to BV=-2V, I = 0.2759898 muA
+Bad bump test at V = -2V:
+Total BadBumps (org) fit:          4 (0.21%)
+Total BadBumps fit (org) non-edge: 4 (0.21%)
+Bias voltage set to BV=0V, I = 0.009849146 muA
