@@ -9,7 +9,7 @@
          <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
                <NAME>Status</NAME>
-               <VALUE>Good</VALUE>
+               <VALUE>Bad</VALUE>
             </ATTRIBUTE>
             <ATTRIBUTE>
                <NAME>Kapton</NAME>
