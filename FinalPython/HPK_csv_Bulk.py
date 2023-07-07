@@ -39,11 +39,11 @@ def HPK_Kapval(name):
         value = 1
     return value
 
+#get MPA name label if need to map number 
 def HPK_getNameLabel(chip_data, no):
     name = chip_data['WaffelNumber'][no]
     coor = MPA2_Remap.get( chip_data['ChipNumber'][no])
     return str(name)+'_'+str(coor)
-
 
 #HPK split files (split every 16 rows)
 def HPK_split(sheetname):
@@ -118,3 +118,22 @@ def HPK_getXML(sheetname):
 
 #input csv file name
 HPK_getXML('hpk2.csv')
+
+
+
+
+
+##############################
+#get MPA name label if given rows, cols
+"""
+def HPK_getNameLabel(chip_data, no):
+    name = chip_data['WaferID'][no][:6] + '_'+  chip_data['WaferID'][no][6:8]
+    row = abs(chip_data['Waferrow'][no])
+    col = chip_data['Wafercol'][no]
+    coor = str(int(col)-9).zfill(2)
+    if int(coor) < 0:
+        col = abs(int(coor))
+        coor =str(1)+str(col)
+    return str(name)+'_'+str(row)+coor
+"""
+
