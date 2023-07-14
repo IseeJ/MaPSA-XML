@@ -49,7 +49,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>N6Y215_02_610</NAME_LABEL>
+               <NAME_LABEL>N6Y215_02_60A</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>

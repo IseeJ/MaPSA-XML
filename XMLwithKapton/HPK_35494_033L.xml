@@ -29,7 +29,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>N6Y215_01_310</NAME_LABEL>
+               <NAME_LABEL>N6Y215_01_30A</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -39,7 +39,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>N6Y215_01_311</NAME_LABEL>
+               <NAME_LABEL>N6Y215_01_30B</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -49,7 +49,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>N6Y215_01_312</NAME_LABEL>
+               <NAME_LABEL>N6Y215_01_30C</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -59,7 +59,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>N6Y215_01_210</NAME_LABEL>
+               <NAME_LABEL>N6Y215_01_20A</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
