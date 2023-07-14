@@ -16,33 +16,26 @@ def AEM_getNameLabel(line):
     row = myelements[4][-1:]
     col = myelements[5]
     coor = int(col)-9
-    
+    coordict = {10:'0A',11:'0B',12:'0C',13:'0D'}
     #col 0-9
     if 0<= int(coor) <=9:
         col = abs(int(coor))
         coor =str(col).zfill(2)
     
     #negative col 19-11 (-9 to -1)
-    if int(coor) < 0:
+    elif int(coor) < 0:
         col = abs(int(coor))
         coor =str(1)+str(col)
-        
-    #col 10-13
-    elif int(coor) == 10:
-        coor = '0A'
-    elif int(coor) == 11:
-        coor = '0B'
-    elif int(coor) == 12:
-        coor = '0C'
-    elif int(coor) == 13:
-        coor = '0D'
-    return name+'_'+row+coor
+    #ABCD col
+    elif coor in coordict:
+        coor = str(coordict[coor])
+
+    return name+'_'+str(row)+str(coor)
 
 #get position (convert rows,cols to 1-16)
 def AEM_getPosn(line):
     myelements = line.split(';')
     MPArow, MPAcol = myelements[2], myelements[3][0:2]
-    MPAcoor = MPArow+MPAcol
     
     if MPAcol == 'D1':
         MPAcoor_num = MPArow
@@ -104,11 +97,11 @@ def AEMtoXML(txtfilename):
         xmlfinal = dom.toprettyxml(indent="   ")
         print(xmlfinal)
         
-        """
+        
         ET.indent(ET.ElementTree(root),'   ')
         aem = open(AEM_mapsaname(filename)+'.xml', "wb")
         ET.ElementTree(root).write(aem)
-        """
+        
         
 #for HPK
 def getHPKdata(filename):
@@ -137,10 +130,19 @@ def HPK_getNameLabel(chip_data, no):
     name = chip_data['WaferID'][no][:6] + '_'+  chip_data['WaferID'][no][6:8]
     row = abs(chip_data['Waferrow'][no])
     col = chip_data['Wafercol'][no]
-    coor = str(int(col)-9).zfill(2)
-    if int(coor) < 0:
+    coor = int(col)-9
+    coordict = {10:'0A',11:'0B',12:'0C',13:'0D'}
+    #col 0-9
+    if 0<= int(coor) <=9:
+        col = abs(int(coor))
+        coor =str(col).zfill(2)
+    #negative col 19-11 (-9 to -1)
+    elif int(coor) < 0:
         col = abs(int(coor))
         coor =str(1)+str(col)
+    #ABCD col
+    elif coor in coordict:
+        coor = str(coordict[coor])
     return str(name)+'_'+str(row)+coor
 
 #HPK split
@@ -186,9 +188,11 @@ def HPKtoXML(sheetname):
         ET.SubElement(attr1, "VALUE").text = "Good"
         
         #Kapton block
-        attr2 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
-        ET.SubElement(attr2, "NAME").text = "Kapton"
-        ET.SubElement(attr2, "VALUE").text = str(HPK_Kapval(getMapsaName(filename)))
+        #attr2 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
+        #ET.SubElement(attr2, "NAME").text = "Kapton"
+        #ET.SubElement(attr2, "VALUE").text = str(HPK_Kapval(getMapsaName(filename)))
+        #print(str(Kapval(getMapsaName(filename))))
+        
         child = ET.SubElement(MAPSA, "CHILDREN")
     
         df = getHPKdata(filename)
@@ -211,18 +215,14 @@ def HPKtoXML(sheetname):
         xmlfinal = dom.toprettyxml(indent="   ")
         
         print(xmlfinal)
-        """
+        
         ET.indent(ET.ElementTree(root),'   ')
         f = open(getMapsaName(filename)+'.xml', "wb")
         ET.ElementTree(root).write(f)
         print(getMapsaName(filename))
-        """
     return 
 
 
-
-
-#Input
 Loc = input('Enter LOCATION:')
 filename = input('Enter txt file with filenamelist:')
 if Loc == 'AEMtec':
