@@ -50,11 +50,6 @@ def AEM_getPosn(line):
         MPAcoor_num = str(17-int(MPArow))
     return MPAcoor_num
 
-
-#####input txt file that contains filename lists
-txtfilename = 'AEMnamelists.txt'
-#####
-
 def AEMtoXML(txtfilename):
     filename_list = []
     with open(txtfilename) as file:
@@ -194,8 +189,6 @@ def HPKtoXML(sheetname):
         attr2 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
         ET.SubElement(attr2, "NAME").text = "Kapton"
         ET.SubElement(attr2, "VALUE").text = str(HPK_Kapval(getMapsaName(filename)))
-        #print(str(Kapval(getMapsaName(filename))))
-        
         child = ET.SubElement(MAPSA, "CHILDREN")
     
         df = getHPKdata(filename)
