@@ -11,10 +11,6 @@
                <NAME>Status</NAME>
                <VALUE>Good</VALUE>
             </ATTRIBUTE>
-            <ATTRIBUTE>
-               <NAME>Kapton</NAME>
-               <VALUE>1</VALUE>
-            </ATTRIBUTE>
          </PREDEFINED_ATTRIBUTES>
          <CHILDREN>
             <PART mode="auto">
