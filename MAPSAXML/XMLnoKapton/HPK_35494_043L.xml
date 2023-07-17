@@ -1,0 +1,183 @@
+<ROOT>
+   <PARTS>
+      <PART mode="auto">
+         <KIND_OF_PART>MaPSA</KIND_OF_PART>
+         <NAME_LABEL>HPK_35494_043L</NAME_LABEL>
+         <MANUFACTURER>Hamamatsu</MANUFACTURER>
+         <LOCATION>Hamamatsu</LOCATION>
+         <VERSION>2.0</VERSION>
+         <PREDEFINED_ATTRIBUTES>
+            <ATTRIBUTE>
+               <NAME>Status</NAME>
+               <VALUE>Good</VALUE>
+            </ATTRIBUTE>
+         </PREDEFINED_ATTRIBUTES>
+         <CHILDREN>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_413</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>1</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_414</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>2</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_415</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>3</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_317</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>4</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_318</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>5</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_419</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>6</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_418</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>7</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_417</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>8</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_416</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>16</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_316</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>15</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_315</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>14</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_314</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>13</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_313</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>12</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_312</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>11</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_311</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>10</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+               <NAME_LABEL>N6Y215_02_509</NAME_LABEL>
+               <PREDEFINED_ATTRIBUTES>
+                  <ATTRIBUTE>
+                     <NAME>Chip Posn on Sensor</NAME>
+                     <VALUE>9</VALUE>
+                  </ATTRIBUTE>
+               </PREDEFINED_ATTRIBUTES>
+            </PART>
+            <PART mode="auto">
+               <KIND_OF_PART>PS-p Sensor</KIND_OF_PART>
+               <NAME_LABEL>35494_043_PSP_MAINL</NAME_LABEL>
+            </PART>
+         </CHILDREN>
+      </PART>
+   </PARTS>
+</ROOT>
