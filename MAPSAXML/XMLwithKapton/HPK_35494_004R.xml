@@ -69,7 +69,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_70_40a</NAME_LABEL>
+               <NAME_LABEL>NAFR49_70_40A</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -79,7 +79,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_71_40b</NAME_LABEL>
+               <NAME_LABEL>NAFR49_71_40B</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -89,7 +89,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_72_40c</NAME_LABEL>
+               <NAME_LABEL>NAFR49_72_40C</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -99,7 +99,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_73_40d</NAME_LABEL>
+               <NAME_LABEL>NAFR49_73_40D</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -109,7 +109,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_74_50d</NAME_LABEL>
+               <NAME_LABEL>NAFR49_74_50D</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -129,7 +129,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_76_50b</NAME_LABEL>
+               <NAME_LABEL>NAFR49_76_50B</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
