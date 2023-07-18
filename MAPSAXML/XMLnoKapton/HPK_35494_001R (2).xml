@@ -2,7 +2,7 @@
    <PARTS>
       <PART mode="auto">
          <KIND_OF_PART>MaPSA</KIND_OF_PART>
-         <NAME_LABEL>HPK_35494_005R</NAME_LABEL>
+         <NAME_LABEL>HPK_35494_001R</NAME_LABEL>
          <MANUFACTURER>Hamamatsu</MANUFACTURER>
          <LOCATION>Hamamatsu</LOCATION>
          <VERSION>2.0</VERSION>
@@ -15,7 +15,7 @@
          <CHILDREN>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_81_80B</NAME_LABEL>
+               <NAME_LABEL>NAFR49_17_211</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -25,7 +25,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_82_908</NAME_LABEL>
+               <NAME_LABEL>NAFR49_18_200</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -35,7 +35,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_83_907</NAME_LABEL>
+               <NAME_LABEL>NAFR49_19_201</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -45,7 +45,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_84_906</NAME_LABEL>
+               <NAME_LABEL>NAFR49_20_202</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -55,7 +55,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_85_905</NAME_LABEL>
+               <NAME_LABEL>NAFR49_21_203</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -65,7 +65,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_86_501</NAME_LABEL>
+               <NAME_LABEL>NAFR49_22_204</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -75,7 +75,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_87_904</NAME_LABEL>
+               <NAME_LABEL>NAFR49_23_205</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -85,7 +85,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_88_511</NAME_LABEL>
+               <NAME_LABEL>NAFR49_24_206</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -95,7 +95,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_89_512</NAME_LABEL>
+               <NAME_LABEL>NAFR49_25_207</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -105,7 +105,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_90_903</NAME_LABEL>
+               <NAME_LABEL>NAFR49_26_208</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -115,7 +115,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_91_514</NAME_LABEL>
+               <NAME_LABEL>NAFR49_27_209</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -125,7 +125,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_92_515</NAME_LABEL>
+               <NAME_LABEL>NAFR49_28_20A</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -135,7 +135,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_93_516</NAME_LABEL>
+               <NAME_LABEL>NAFR49_29_20B</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -145,7 +145,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_94_517</NAME_LABEL>
+               <NAME_LABEL>NAFR49_30_30C</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -155,7 +155,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_95_518</NAME_LABEL>
+               <NAME_LABEL>NAFR49_31_705</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -165,7 +165,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_96_902</NAME_LABEL>
+               <NAME_LABEL>NAFR49_32_704</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
@@ -175,7 +175,7 @@
             </PART>
             <PART mode="auto">
                <KIND_OF_PART>PS-p Sensor</KIND_OF_PART>
-               <NAME_LABEL>35494_005_PSP_MAINR</NAME_LABEL>
+               <NAME_LABEL>35494_001_PSP_MAINR</NAME_LABEL>
             </PART>
          </CHILDREN>
       </PART>
