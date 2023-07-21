@@ -19,7 +19,7 @@
          <CHILDREN>
             <PART mode="auto">
                <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-               <NAME_LABEL>NAFR49_81_80b</NAME_LABEL>
+               <NAME_LABEL>NAFR49_81_80B</NAME_LABEL>
                <PREDEFINED_ATTRIBUTES>
                   <ATTRIBUTE>
                      <NAME>Chip Posn on Sensor</NAME>
