@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='ASCII' standalone='yes'?>
+<?xml version="1.0" ?>
 <ROOT>
   <PARTS>
     <PART mode="auto">
@@ -8,15 +8,15 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>805315419</SERIAL_NUMBER>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_506</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
@@ -34,15 +34,15 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>1207968604</SERIAL_NUMBER>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_505</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
@@ -60,15 +60,15 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>939533149</SERIAL_NUMBER>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_504</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
@@ -86,15 +86,15 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>805315422</SERIAL_NUMBER>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_503</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
@@ -112,15 +112,15 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>1207968607</SERIAL_NUMBER>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_502</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
@@ -138,15 +138,15 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>1207968608</SERIAL_NUMBER>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_501</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
@@ -164,15 +164,15 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>1207968609</SERIAL_NUMBER>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_500</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
@@ -190,15 +190,15 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>1342186338</SERIAL_NUMBER>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_511</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
@@ -216,15 +216,15 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>1207968611</SERIAL_NUMBER>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_512</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
@@ -242,15 +242,15 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>1207968612</SERIAL_NUMBER>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_513</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
@@ -268,15 +268,15 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>1073750885</SERIAL_NUMBER>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_514</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
@@ -294,15 +294,15 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>1207968614</SERIAL_NUMBER>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_515</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
@@ -320,15 +320,15 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>402662247</SERIAL_NUMBER>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_516</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
@@ -346,15 +346,15 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>1073750888</SERIAL_NUMBER>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_517</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
@@ -372,15 +372,15 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
           <KIND_OF_PART>MPA Chip</KIND_OF_PART>
-          <SERIAL_NUMBER>1476404073</SERIAL_NUMBER>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_518</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
@@ -398,48 +398,20 @@
       <LOCATION>AEMtec</LOCATION>
       <VERSION>2.0</VERSION>
       <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
+        <ATTRIBUTE>
+          <NAME>Status</NAME>
+          <VALUE>Good</VALUE>
+        </ATTRIBUTE>
       </PREDEFINED_ATTRIBUTES>
       <CHILDREN>
         <PART mode="auto">
-          <KIND_OF_PART>PS-p Sensor</KIND_OF_PART>
-          <SERIAL_NUMBER>1073750890</SERIAL_NUMBER>
+          <KIND_OF_PART>MPA Chip</KIND_OF_PART>
+          <SERIAL_NUMBER>Input Serial Number</SERIAL_NUMBER>
           <NAME_LABEL>N6Y215_03_519</NAME_LABEL>
           <PREDEFINED_ATTRIBUTES>
             <ATTRIBUTE>
               <NAME>Chip Posn on Sensor</NAME>
               <VALUE>9</VALUE>
-            </ATTRIBUTE>
-          </PREDEFINED_ATTRIBUTES>
-        </PART>
-      </CHILDREN>
-    </PART>
-    <PART mode="auto">
-      <KIND_OF_PART>MaPSA</KIND_OF_PART>
-      <NAME_LABEL>AEM_35494_016L</NAME_LABEL>
-      <MANUFACTURER>AEMtec</MANUFACTURER>
-      <LOCATION>AEMtec</LOCATION>
-      <VERSION>2.0</VERSION>
-      <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Status</NAME>
-              <VALUE>Good</VALUE>
-            </ATTRIBUTE>
-      </PREDEFINED_ATTRIBUTES>
-      <CHILDREN>
-        <PART mode="auto">
-          <KIND_OF_PART>PS-p Sensor</KIND_OF_PART>
-          <SERIAL_NUMBER>|0000|0000|0000|0000|0110|0101|</SERIAL_NUMBER>
-          <NAME_LABEL>35494_016_PSP_MAINL</NAME_LABEL>
-          <BARCODE>35494_016_PSP_MAINL</BARCODE>
-          <MANUFACTURER>Hamamatsu</MANUFACTURER>
-          <PREDEFINED_ATTRIBUTES>
-            <ATTRIBUTE>
-              <NAME>Will add attributes later</NAME>
-              <VALUE>0</VALUE>
             </ATTRIBUTE>
           </PREDEFINED_ATTRIBUTES>
         </PART>
