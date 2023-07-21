@@ -139,7 +139,8 @@ def AEMtoXML(filename):
 #for HPK first data set
 
 def getHPKdata1(filename):
-    chip_data = pd.read_csv(filename+".csv", names = ['number', 'location','WaffelPackno','WaffelPackrow','WaffelPackcol', 'WaferID','Waferrow','Wafercol','BINcode'])
+    chip_data = pd.read_csv('/uscms/home/wjaidee/nobackup/MaPSA_database/'+filename+'.csv')
+    # names = ['number', 'location','WaffelPackno','WaffelPackrow','WaffelPackcol', 'WaferID','Waferrow','Wafercol','BINcode']
     return chip_data
 
 def HPK_MapsaName(filename):
@@ -162,7 +163,7 @@ def HPK_Kapval1(name):
 
 def HPK_getNameLabel1(chip_data, no):
     name = chip_data['WaferID'][no][:6] + '_'+  chip_data['WaferID'][no][6:8]
-    row = abs(chip_data['Waferrow'][no])
+    row = abs(int(chip_data['Waferrow'][no]))
     col = chip_data['Wafercol'][no]
     coor = int(col)-9
     coordict = {10:'0A',11:'0B',12:'0C',13:'0D'}
@@ -181,29 +182,26 @@ def HPK_getNameLabel1(chip_data, no):
 
 #HPK split
 def HPK_split1(sheetname):
-    with open(sheetname, 'r') as file:
-        raw = file.read()[116:]
-    rows = raw.split('\n')
-    delim = str(rows[1].split(',')[0].split('_')[0]) #use 35494 as delimeter
-    sections = re.split(delim, raw)
-    sections.pop(0)
-    filename_list = []
+    raw = pd.read_csv('/uscms/home/wjaidee/nobackup/MaPSA_database/XMLgenerator/'+sheetname, names =['number', 'location','WaffelPackno','WaffelPackrow','WaffelPackcol', 'WaferID','Waferrow','Wafercol','BINcode'])
+    data = pd.DataFrame(raw).tail(-1)
+    filename_list = data.dropna()['number'].tolist()
+    print(filename_list)
+    k = len(filename_list)
+    size = 16
+    for n in range(k):
+        df = data[size*n:size*(n+1)]
+        df.to_csv('/uscms/home/wjaidee/nobackup/MaPSA_database/'+filename_list[n]+'.csv',index=False)
 
-    for section in sections:
-        data = delim+section
-        filename = data.split(',')[0]
-        filename_list.append(filename)
-        with open(filename + '.csv', 'w') as output_file:
-            output_file.write(data)
-    #print(filename_list)
+    print(filename_list)
     return filename_list
+
 
 #for HPK sheet 
 def HPK_getXML1(sheetname):
     filename_list = HPK_split1(sheetname) #split,save csv files
     for filename in filename_list:
         chip_data = getHPKdata1(filename)
-       
+        print(chip_data)
         root = ET.Element("ROOT")
         parts = ET.SubElement(root, "PARTS")
 
@@ -223,7 +221,14 @@ def HPK_getXML1(sheetname):
         
         attr2 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
         ET.SubElement(attr2, "NAME").text = "Grade"
-        ET.SubElement(attr2, "VALUE").text = "A"
+        ET.SubElement(attr2, "NAME").text = "Grade"
+        if HPK_MapsaName(filename) in GradeB:
+            Grade = 'B'
+        elif HPK_MapsaName(filename) in GradeC:
+            Grade = 'C'
+        else:
+            Grade = 'A'
+        ET.SubElement(attr2, "VALUE").text = Grade
         
         #Rework candidate
         attr3 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
