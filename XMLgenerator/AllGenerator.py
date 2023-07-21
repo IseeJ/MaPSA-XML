@@ -4,6 +4,10 @@ import xml.dom.minidom
 import re
 import pandas as pd
 
+
+GradeB = ['AEM_35494_015L', 'AEM_35494_016L', 'AEM_35494_027L', 'HPK_35494_003R','HPK_35494_032L','HPK_35494_033L','HPK_35494_044L']
+GradeC = ['AEM_35494_002L','AEM_35494_008L', 'HPK_35494_002R','HPK_35494_005R']
+
 #for AEM
 def AEM_mapsaname(filename):
     Mapsaname = 'AEM_'+filename[0:9]+filename[:-4][-1:]
@@ -45,11 +49,12 @@ def AEM_getPosn(line):
 
 def AEM_getfilename(txtfilename):
     filename_list = []
-    with open(txtfilename) as file:
+    with open('/uscms/home/wjaidee/nobackup/MaPSA_database/XMLgenerator/'+txtfilename) as file:
         AEMlist = file.read()
         filename = AEMlist.split('\n')
         for line in filename:
             filename_list.append(line)
+        print(filename_list)
     return filename_list
 
 def AEM_Kapval(name):
@@ -61,7 +66,7 @@ def AEM_Kapval(name):
     return value
 
 def AEMtoXML(filename):
-    with open(filename) as file:
+    with open('/uscms/home/wjaidee/nobackup/MaPSA_database/'+filename) as file:
         myfile = file.read()
         mylines = myfile.split('\n')
         del mylines[16]
@@ -83,9 +88,18 @@ def AEMtoXML(filename):
     ET.SubElement(attr1, "NAME").text = "Has Kapton isolation"
     ET.SubElement(attr1, "VALUE").text = AEM_Kapval(AEM_mapsaname(filename))       
     
+#    GradeB = ['AEM_35494_015L', 'AEM_35494_016L', 'AEM_35494_027L', 'HPK_35494_003R','HPK_35494_032L','HPK_35494_033L','HPK_35494_044L']
+#    GradeC = ['AEM_35494_002L','AEM_35494_008L', 'HPK_35494_002R','HPK_35494_005R']
+ 
     attr2 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
     ET.SubElement(attr2, "NAME").text = "Grade"
-    ET.SubElement(attr2, "VALUE").text = "A"
+    if AEM_mapsaname(filename) in GradeB:
+        Grade = 'B'
+    elif AEM_mapsaname(filename) in GradeC:
+        Grade = 'C'
+    else:
+        Grade = 'A'
+    ET.SubElement(attr2, "VALUE").text = Grade
         
     #Rework candidate
     attr3 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
@@ -114,9 +128,10 @@ def AEMtoXML(filename):
     dom = xml.dom.minidom.parseString(xmlstr)
     xmlfinal = dom.toprettyxml(indent="   ")
     print(xmlfinal)
-         
+    
+    print(AEM_mapsaname(filename))
     ET.indent(ET.ElementTree(root),'   ')
-    aem = open(AEM_mapsaname(filename)+'.xml', "wb")
+    aem = open('/uscms/home/wjaidee/nobackup/MaPSA_database/XMLgenerator/XMLnew/'+AEM_mapsaname(filename)+'.xml', "wb")
     ET.ElementTree(root).write(aem)
 
 
@@ -248,7 +263,7 @@ def HPK_getXML1(sheetname):
         print(xmlfinal)
         
         ET.indent(ET.ElementTree(root),'   ')
-        f = open(HPK_MapsaName(filename)+'.xml', "wb")
+        f = open('/uscms/home/wjaidee/nobackup/MaPSA_database/XMLgenerator/XMLnew/'+HPK_MapsaName(filename)+'.xml', "wb")
         ET.ElementTree(root).write(f)
         print(HPK_MapsaName(filename))
     return 
@@ -392,33 +407,36 @@ def HPK_getXML2(sheetname):
         print(xmlfinal)
         
         ET.indent(ET.ElementTree(root),'   ')
-        f = open(getMapsaName(filename)+'.xml', "wb")
+        f = open('/uscms/home/wjaidee/nobackup/MaPSA_database/XMLgenerator/XMLnew/'+getMapsaName(filename)+'.xml', "wb")
         ET.ElementTree(root).write(f)
         print(getMapsaName(filename))
         
         
     return 
 
+
+
+################################################################
 Loc = input('Enter LOCATION:')
 Loc_dict = {'H':'Hamamatsu','A':'AEMtec'}
 Loc = Loc_dict[Loc]
 
-filename = input('Enter txt file with filenamelist:')
-file_dict = {'A':'AEMnamelists.txt','B': 'MissingAEM.csv' ,'C':'HPKSheet1.csv', 'D':'hpk2.csv'}
-filename = file_dict[filename]
+sheetname = input('Enter txt file with filenamelist:')
+sheet_dict = {'A':'AEMnamelists.txt','B': 'MissingAEM.csv' ,'C':'HPKSheet1.csv', 'D':'hpk2.csv'}
+sheetname = sheet_dict[sheetname]
 
 if Loc == 'AEMtec':
     typeoffile = input('Is the input file in txt? [y/n]')
     if  typeoffile == 'y':
-        filename_list = AEM_getfilename(filename)
+        filename_list = AEM_getfilename(sheetname)
         for filename in filename_list:
             AEMtoXML(filename)
     elif typeoffile == 'n':
-        AEM_csvgetXML(filename)
+        AEM_csvgetXML(sheetname)
     
 elif Loc == 'Hamamatsu':
     Chipnum = input('Is the chip name in rows, cols? [y/n]')
     if Chipnum == 'y':
-        HPK_getXML1(filename)
+        HPK_getXML1(sheetname)
     elif Chipnum == 'n':
-        HPK_getXML2(filename)
+        HPK_getXML2(sheetname)
