@@ -107,7 +107,7 @@ def AEMtoXML(filename):
     if filename in ["ReworkCandidateNames"]:
         ET.SubElement(attr3, "VALUE").text = "Needs repair"
     else:
-        ET.SubElement(attr3, "VALUE").text = {}
+        ET.SubElement(attr3, "VALUE").text = "Good"
     
 
     child = ET.SubElement(MAPSA, "CHILDREN")
@@ -235,7 +235,7 @@ def HPK_getXML1(sheetname):
         if filename in ["ReworkCandidateNames"]:
             ET.SubElement(attr3, "VALUE").text = "Needs repair"
         else:
-            ET.SubElement(attr3, "VALUE").text = {}
+            ET.SubElement(attr3, "VALUE").text = "Good"
         
         #Kapton block
         #attr2 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
@@ -371,7 +371,14 @@ def HPK_getXML2(sheetname):
         
         attr2 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
         ET.SubElement(attr2, "NAME").text = "Grade"
-        ET.SubElement(attr2, "VALUE").text = "A"
+        if getMapsaName(filename) in GradeB:
+            Grade = 'B'
+        elif getMapsaName(filename) in GradeC:
+            Grade = 'C'
+        else:
+            Grade = 'A'
+        ET.SubElement(attr2, "VALUE").text = Grade
+
         
         #Rework candidate
         attr3 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
@@ -379,7 +386,7 @@ def HPK_getXML2(sheetname):
         if filename in ["ReworkCandidateNames"]:
             ET.SubElement(attr3, "VALUE").text = "Needs repair"
         else:
-            ET.SubElement(attr3, "VALUE").text = {}
+            ET.SubElement(attr3, "VALUE").text = "Good"
         
         
         #Kapton block

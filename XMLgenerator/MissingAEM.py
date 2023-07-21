@@ -109,7 +109,7 @@ def AEM_csvgetXML(datalist):
         if Mapsaname in ["ReworkCandidateNames"]:
             ET.SubElement(attr3, "VALUE").text = "Needs repair"
         else:
-            ET.SubElement(attr3, "VALUE").text = {}
+            ET.SubElement(attr3, "VALUE").text = "Good"
 
         #MPA chips
         child = ET.SubElement(MAPSA, "CHILDREN")

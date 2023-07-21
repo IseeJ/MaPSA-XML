@@ -13,12 +13,11 @@
             </ATTRIBUTE>
             <ATTRIBUTE>
                <NAME>Grade</NAME>
-               <NAME>Grade</NAME>
                <VALUE>B</VALUE>
             </ATTRIBUTE>
             <ATTRIBUTE>
                <NAME>Status</NAME>
-               <VALUE />
+               <VALUE>Good</VALUE>
             </ATTRIBUTE>
          </PREDEFINED_ATTRIBUTES>
          <CHILDREN>
