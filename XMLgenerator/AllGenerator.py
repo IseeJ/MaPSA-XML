@@ -221,7 +221,6 @@ def HPK_getXML1(sheetname):
         
         attr2 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
         ET.SubElement(attr2, "NAME").text = "Grade"
-        ET.SubElement(attr2, "NAME").text = "Grade"
         if HPK_MapsaName(filename) in GradeB:
             Grade = 'B'
         elif HPK_MapsaName(filename) in GradeC:
@@ -305,7 +304,7 @@ MPA2_Remap = {
 
 #functions
 def getHPKdata(filename):
-    chip_data = pd.read_csv(filename+".csv")
+    chip_data = pd.read_csv('/uscms/home/wjaidee/nobackup/MaPSA_database/'+filename+".csv")
     return chip_data
 
 def getMapsaName(filename):
@@ -344,7 +343,7 @@ def HPK_split(sheetname):
     
     for i in range(k):
         df = data[size*i:size*(i+1)]
-        df.to_csv(filename_list[i]+'.csv', index=False) #reset index values
+        df.to_csv('/uscms/home/wjaidee/nobackup/MaPSA_database/'+filename_list[i]+'.csv', index=False) #reset index values
     return filename_list
 
 #for HPK sheet 
