@@ -1,0 +1,16 @@
+import xml.etree.ElementTree as ET
+import xml.dom.minidom
+import re
+import pandas as pd
+from dict2xml import dict2xml
+
+import HPK
+
+Loc = input('Enter LOCATION:')
+filename = input('Enter txt file with filenamelist:')
+if Loc == 'AEMtec':
+    filename_list = AEM_getfilename(filename)
+    for filename in filename_list:
+        AEMtoXML(filename)
+elif Loc == 'Hamamatsu':
+    HPK.HPKtoXML1(filename)

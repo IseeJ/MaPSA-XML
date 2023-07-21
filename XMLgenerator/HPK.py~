@@ -1,0 +1,117 @@
+class HPK:
+    def getHPKdata1(filename):
+        chip_data = pd.read_csv(filename+".csv", names = ['number', 'location','WaffelPackno','WaffelPackrow','WaffelPackcol', 'WaferID','Waferrow','Wafercol','BINcode'])
+        return chip_data
+
+    def MapsaName(filename):
+        return 'HPK_'+filename[0:9]+filename[-1:]
+
+    def getPosn(num):
+        if num>8:
+            Posn=25-num
+        else:
+            Posn=num
+        return Posn
+
+    def Kapval(name):
+        noKap = ["HPK_35494_032L","HPK_35494_033L","HPK_35494_040L","HPK_35494_041L","HPK_35494_042L","HPK_35494_036L","HPK_35494_037L","HPK_35494_038L","HPK_35494_039L"]
+        if name in noKap:
+            value = 0
+        else:
+            value = 1
+        return value
+
+    def getNameLabel(chip_data, no):
+        name = chip_data['WaferID'][no][:6] + '_'+  chip_data['WaferID'][no][6:8]
+        row = abs(chip_data['Waferrow'][no])
+        col = chip_data['Wafercol'][no]
+        coor = int(col)-9
+        coordict = {10:'0A',11:'0B',12:'0C',13:'0D'}
+        #col 0-9
+        if 0<= int(coor) <=9:
+            col = abs(int(coor))
+            coor =str(col).zfill(2)
+        #negative col 19-11 (-9 to -1)
+        elif int(coor) < 0:
+            col = abs(int(coor))
+            coor =str(1)+str(col)
+        #ABCD col
+        elif coor in coordict:
+            coor = str(coordict[coor])
+        return str(name)+'_'+str(row)+coor
+
+    #HPK split
+    def HPK_split(sheetname):
+        with open(sheetname, 'r') as file:
+            raw = file.read()[116:]
+        rows = raw.split('\n')
+        delim = str(rows[1].split(',')[0].split('_')[0]) #use 35494 as delimeter
+        sections = re.split(delim, raw)
+        sections.pop(0)
+        filename_list = []
+
+        for section in sections:
+            data = delim+section
+            filename = data.split(',')[0]
+            filename_list.append(filename)
+            with open(filename + '.csv', 'w') as output_file:
+                output_file.write(data)
+        return filename_list
+
+    #for HPK sheet 
+    def HPKtoXML1(sheetname):
+        filename_list = HPK.HPK_split(sheetname) #split,save csv files
+        for filename in filename_list:
+            chip_data = HPK.getHPKdata1(filename)
+       
+            root = ET.Element("ROOT")
+            parts = ET.SubElement(root, "PARTS")
+
+            # MaPSA block
+            MAPSA = ET.SubElement(parts, "PART", mode="auto") #use ElementTree to add mode='auto'
+            ET.SubElement(MAPSA, "KIND_OF_PART").text = "MaPSA"
+            ET.SubElement(MAPSA, "NAME_LABEL").text = HPK.MapsaName(filename)
+            ET.SubElement(MAPSA, "MANUFACTURER").text = Loc
+            ET.SubElement(MAPSA, "LOCATION").text = Loc
+            ET.SubElement(MAPSA, "VERSION").text = "2.0"
+    
+            predefMapsa1 = ET.SubElement(MAPSA, "PREDEFINED_ATTRIBUTES")
+            attr1 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
+            ET.SubElement(attr1, "NAME").text = "Status"
+            ET.SubElement(attr1, "VALUE").text = "Good"
+        
+            #Kapton block
+            #attr2 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
+            #ET.SubElement(attr2, "NAME").text = "Kapton"
+            #ET.SubElement(attr2, "VALUE").text = str(HPK_Kapval(getMapsaName(filename)))
+            #print(str(Kapval(getMapsaName(filename))))
+        
+            child = ET.SubElement(MAPSA, "CHILDREN")
+    
+            df = HPK.getHPKdata1(filename)
+            for index, row in df.iterrows():
+                child_sub = ET.SubElement(child, "PART", mode="auto")
+                ET.SubElement(child_sub, "KIND_OF_PART").text = "MPA Chip"
+                ET.SubElement(child_sub, "NAME_LABEL").text = str(HPK.getNameLabel(chip_data, index))
+                #Predefined attributes of child
+                child_predef = ET.SubElement(child_sub, "PREDEFINED_ATTRIBUTES")
+                child_predef_attr = ET.SubElement(child_predef, "ATTRIBUTE")
+                ET.SubElement(child_predef_attr, "NAME").text = "Chip Posn on Sensor"
+                ET.SubElement(child_predef_attr, "VALUE").text = str(HPK.getPosn(row['location']))
+
+    
+            sensor_sub = ET.SubElement(child, "PART", mode="auto")
+            ET.SubElement(sensor_sub, "KIND_OF_PART").text = "PS-p Sensor"
+            ET.SubElement(sensor_sub, "NAME_LABEL").text = chip_data['number'][0]
+            xmlstr = ET.tostring(root)
+            dom = xml.dom.minidom.parseString(xmlstr)
+            xmlfinal = dom.toprettyxml(indent="   ")
+        
+            print(xmlfinal)
+            """
+            ET.indent(ET.ElementTree(root),'   ')
+            f = open(HPK.MapsaName(filename)+'.xml', "wb")
+            ET.ElementTree(root).write(f)
+            print(HPK.MapsaName(filename))
+            """
+        return 
