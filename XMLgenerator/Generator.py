@@ -272,22 +272,21 @@ def AEM_csvgetXML(file):
 ############################################################################
 #for HPK first data set
 
-def getHPKdata1(filename):
+def HPK_getdata(filename):
     chip_data = pd.read_csv('/uscms/home/wjaidee/nobackup/MaPSA_database/'+filename+'.csv')
-    # names = ['number', 'location','WaffelPackno','WaffelPackrow','WaffelPackcol', 'WaferID','Waferrow','Wafercol','BINcode']
     return chip_data
 
 def HPK_MapsaName(filename):
     return 'HPK_'+filename[0:9]+filename[-1:]
 
-def HPK_getPosn1(num):
+def HPK_getPosn(num):
     if num>8:
         Posn=25-num
     else:
         Posn=num
     return Posn
 
-def HPK_Kapval1(name):
+def HPK_Kapval(name):
     noKap = ["HPK_35494_032L","HPK_35494_033L","HPK_35494_040L","HPK_35494_041L","HPK_35494_042L","HPK_35494_036L","HPK_35494_037L","HPK_35494_038L","HPK_35494_039L"]
     if name in noKap:
         value = "No"
@@ -334,7 +333,7 @@ def HPK_split1(sheetname):
 def HPK_getXML1(sheetname):
     filename_list = HPK_split1(sheetname) #split,save csv files
     for filename in filename_list:
-        chip_data = getHPKdata1(filename)
+        chip_data = HPK_getdata(filename)
         print(chip_data)
         root = ET.Element("ROOT")
         parts = ET.SubElement(root, "PARTS")
@@ -351,7 +350,7 @@ def HPK_getXML1(sheetname):
         predefMapsa1 = ET.SubElement(MAPSA, "PREDEFINED_ATTRIBUTES")
         attr1 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
         ET.SubElement(attr1, "NAME").text = "Has Kapton isolation"
-        ET.SubElement(attr1, "VALUE").text = HPK_Kapval1(HPK_MapsaName(filename))
+        ET.SubElement(attr1, "VALUE").text = HPK_Kapval(HPK_MapsaName(filename))
         
         attr2 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
         ET.SubElement(attr2, "NAME").text = "Grade"
@@ -374,12 +373,12 @@ def HPK_getXML1(sheetname):
         #Kapton block
         #attr2 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
         #ET.SubElement(attr2, "NAME").text = "Kapton"
-        #ET.SubElement(attr2, "VALUE").text = str(HPK_Kapval(getMapsaName(filename)))
-        #print(str(Kapval(getMapsaName(filename))))
+        #ET.SubElement(attr2, "VALUE").text = str(HPK_Kapval(HPK_MapsaName(filename)))
+        #print(str(Kapval(HPK_MapsaName(filename))))
         
         child = ET.SubElement(MAPSA, "CHILDREN")
     
-        df = getHPKdata1(filename)
+        df = HPK_getdata(filename)
         for index, row in df.iterrows():
             child_sub = ET.SubElement(child, "PART", mode="auto")
             ET.SubElement(child_sub, "KIND_OF_PART").text = "MPA Chip"
@@ -388,7 +387,7 @@ def HPK_getXML1(sheetname):
             child_predef = ET.SubElement(child_sub, "PREDEFINED_ATTRIBUTES")
             child_predef_attr = ET.SubElement(child_predef, "ATTRIBUTE")
             ET.SubElement(child_predef_attr, "NAME").text = "Chip Posn on Sensor"
-            ET.SubElement(child_predef_attr, "VALUE").text = str(HPK_getPosn1(row['location']))
+            ET.SubElement(child_predef_attr, "VALUE").text = str(HPK_getPosn(row['location']))
 
     
         sensor_sub = ET.SubElement(child, "PART", mode="auto")
@@ -437,27 +436,6 @@ MPA2_Remap = {
     183: "A00", 184: "A01", 185: "A02", 186: "A03", 187: "A04"}
 
 #functions
-def getHPKdata(filename):
-    chip_data = pd.read_csv('/uscms/home/wjaidee/nobackup/MaPSA_database/'+filename+".csv")
-    return chip_data
-
-def getMapsaName(filename):
-    return 'HPK_'+filename[0:9]+filename[-1:]
-
-def HPK_getPosn(num):
-    if num>8:
-        Posn=25-num
-    else:
-        Posn=num
-    return Posn
-
-def HPK_Kapval(name):
-    noKap = ["HPK_35494_032L","HPK_35494_033L","HPK_35494_040L","HPK_35494_041L","HPK_35494_042L","HPK_35494_036L","HPK_35494_037L","HPK_35494_38L","HPK_35494_039L"]
-    if name in noKap:
-        value = "No"
-    else:
-        value = "Yes"
-    return value
 
 def HPK_getNameLabel(chip_data, no):
     name = chip_data['WaffelNumber'][no]
@@ -484,7 +462,7 @@ def HPK_split(sheetname):
 def HPK_getXML2(sheetname):
     filename_list = HPK_split(sheetname) #split,save csv files
     for filename in filename_list:
-        chip_data = getHPKdata(filename)
+        chip_data = HPK_getdata(filename)
        
         root = ET.Element("ROOT")
         parts = ET.SubElement(root, "PARTS")
@@ -492,7 +470,7 @@ def HPK_getXML2(sheetname):
         # MaPSA block
         MAPSA = ET.SubElement(parts, "PART", mode="auto") #use ElementTree to add mode='auto'
         ET.SubElement(MAPSA, "KIND_OF_PART").text = "MaPSA"
-        ET.SubElement(MAPSA, "NAME_LABEL").text = getMapsaName(filename)
+        ET.SubElement(MAPSA, "NAME_LABEL").text = HPK_MapsaName(filename)
         ET.SubElement(MAPSA, "MANUFACTURER").text = "Hamamatsu"
         ET.SubElement(MAPSA, "LOCATION").text = "Hamamatsu"
         ET.SubElement(MAPSA, "VERSION").text = "2.0"
@@ -501,13 +479,13 @@ def HPK_getXML2(sheetname):
         predefMapsa1 = ET.SubElement(MAPSA, "PREDEFINED_ATTRIBUTES")
         attr1 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
         ET.SubElement(attr1, "NAME").text = "Has Kapton isolation"
-        ET.SubElement(attr1, "VALUE").text = HPK_Kapval(getMapsaName(filename))
+        ET.SubElement(attr1, "VALUE").text = HPK_Kapval(HPK_MapsaName(filename))
         
         attr2 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
         ET.SubElement(attr2, "NAME").text = "Grade"
-        if getMapsaName(filename) in GradeB:
+        if HPK_MapsaName(filename) in GradeB:
             Grade = 'B'
-        elif getMapsaName(filename) in GradeC:
+        elif HPK_MapsaName(filename) in GradeC:
             Grade = 'C'
         else:
             Grade = 'A'
@@ -526,11 +504,11 @@ def HPK_getXML2(sheetname):
         #Kapton block
         #attr2 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
         #ET.SubElement(attr2, "NAME").text = "Kapton"
-        #ET.SubElement(attr2, "VALUE").text = str(HPK_Kapval(getMapsaName(filename)))
+        #ET.SubElement(attr2, "VALUE").text = str(HPK_Kapval(HPK_MapsaName(filename)))
         
         child = ET.SubElement(MAPSA, "CHILDREN")
     
-        df = getHPKdata(filename)
+        df = HPK_getdata(filename)
         for index, row in df.iterrows():
             child_sub = ET.SubElement(child, "PART", mode="auto")
             ET.SubElement(child_sub, "KIND_OF_PART").text = "MPA Chip"
@@ -552,9 +530,9 @@ def HPK_getXML2(sheetname):
         print(xmlfinal)
         
         ET.indent(ET.ElementTree(root),'   ')
-        f = open('/uscms/home/wjaidee/nobackup/MaPSA_database/XMLgenerator/XMLnew/'+getMapsaName(filename)+'.xml', "wb")
+        f = open('/uscms/home/wjaidee/nobackup/MaPSA_database/XMLgenerator/XMLnew/'+HPK_MapsaName(filename)+'.xml', "wb")
         ET.ElementTree(root).write(f)
-        print(getMapsaName(filename))
+        print(HPK_MapsaName(filename))
         
         
     return 
