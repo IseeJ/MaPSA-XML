@@ -11,6 +11,7 @@ print(df)
 grouped = df.groupby('No.')
 
 def AEM_split(sheetname):
+    MapSub = {'1':'AEM_35494_002L','2': 'AEM_35494_030L', '3':'AEM_35494_029L', '4':'AEM_35494_028L'}
     raw = pd.read_csv(sheetname, names = ['No.', 'Module','Bondposition','MPA','Wafer ID','Row','Column','Bin'])
     data = pd.DataFrame(raw).tail(-1)
     k= int(len(data)/16)
@@ -19,7 +20,7 @@ def AEM_split(sheetname):
     
     for i in range(k):
         df = data[size*i:size*(i+1)]
-        df.to_csv('AEM'+str(i)+'.csv', index=False) 
+        df.to_csv('/uscms/home/wjaidee/nobackup/MaPSA_database/'+MapSub[str(i+1)]+'.csv', index=False) 
         print(df)
     return 
     
@@ -87,15 +88,15 @@ def AEM_csvgetXML(datalist):
         predefMapsa1 = ET.SubElement(MAPSA, "PREDEFINED_ATTRIBUTES")
         attr1 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
         ET.SubElement(attr1, "NAME").text = "Has Kapton isolation"
-        ET.SubElement(attr1, "VALUE").text = Mapsaname       
+        ET.SubElement(attr1, "VALUE").text = AEM_Kapval(Mapsaname)       
     
         attr2 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
         GradeB = ['AEM_35494_015L', 'AEM_35494_016L', 'AEM_35494_027L', 'HPK_35494_003R','HPK_35494_032L','HPK_35494_033L','HPK_35494_044L']
         GradeC = ['AEM_35494_002L','AEM_35494_008L', 'HPK_35494_002R','HPK_35494_005R']
         ET.SubElement(attr2, "NAME").text = "Grade"
-        if Mapsaname(filename) in GradeB:
+        if Mapsaname in GradeB:
             Grade = 'B'
-        elif Mapsaname(filename) in GradeC:
+        elif Mapsaname in GradeC:
             Grade = 'C'
         else:
             Grade = 'A'
@@ -105,10 +106,10 @@ def AEM_csvgetXML(datalist):
         #Rework candidate
         attr3 = ET.SubElement(predefMapsa1, "ATTRIBUTE")
         ET.SubElement(attr3, "NAME").text = "Status"
-        if filename in ["ReworkCandidateNames"]:
+        if Mapsaname in ["ReworkCandidateNames"]:
             ET.SubElement(attr3, "VALUE").text = "Needs repair"
         else:
-            ET.SubElement(attr3, "VALUE").text = {}
+            ET.SubElement(attr3, "VALUE").text = "Good"
 
         #MPA chips
         child = ET.SubElement(MAPSA, "CHILDREN")
@@ -128,7 +129,7 @@ def AEM_csvgetXML(datalist):
         ET.SubElement(sensor_sub, "NAME_LABEL").text = 'MaPSA name'
     
         ET.indent(ET.ElementTree(root),'   ')
-        f = open(/uscms/home/wjaidee/nobackup/MaPSA_database/XMLgeneratorMapsaname+'.xml', "wb")
+        f = open('/uscms/home/wjaidee/nobackup/MaPSA_database/XMLgenerator/XMLnew/'+Mapsaname+'.xml', "wb")
         ET.ElementTree(root).write(f)
     
         xmlstr = ET.tostring(root)
@@ -137,3 +138,4 @@ def AEM_csvgetXML(datalist):
         print(xmlfinal)
     
 AEM_csvgetXML(datalist)
+sheetname = input('Enter txt file with filenamelist:')
