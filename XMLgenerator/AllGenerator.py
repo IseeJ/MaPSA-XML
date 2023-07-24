@@ -432,8 +432,9 @@ Loc = input('Enter LOCATION:')
 Loc_dict = {'H':'Hamamatsu','A':'AEMtec'}
 Loc = Loc_dict[Loc]
 
-sheetname = input('Enter txt file with filenamelist:')
 sheet_dict = {'A':'AEMnamelists.txt','B': 'MissingAEM.csv' ,'C':'HPKSheet1.csv', 'D':'hpk2.csv'}
+print(sheet_dict)
+sheetname = input('Which file:')
 sheetname = sheet_dict[sheetname]
 
 if Loc == 'AEMtec':
