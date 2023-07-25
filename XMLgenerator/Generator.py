@@ -1,3 +1,4 @@
+
 # required packages
 import xml.etree.ElementTree as ET
 import xml.dom.minidom
@@ -342,8 +343,8 @@ def HPK_getXML1(sheetname):
         MAPSA = ET.SubElement(parts, "PART", mode="auto") #use ElementTree to add mode='auto'
         ET.SubElement(MAPSA, "KIND_OF_PART").text = "MaPSA"
         ET.SubElement(MAPSA, "NAME_LABEL").text = HPK_MapsaName(filename)
-        ET.SubElement(MAPSA, "MANUFACTURER").text = "Hamamatsu"
-        ET.SubElement(MAPSA, "LOCATION").text = "Hamamatsu"
+        ET.SubElement(MAPSA, "MANUFACTURER").text = Loc
+        ET.SubElement(MAPSA, "LOCATION").text = Loc
         ET.SubElement(MAPSA, "VERSION").text = "2.0"
 
         # MaPSA attributes
@@ -455,8 +456,8 @@ def HPK_getXML2(sheetname):
         MAPSA = ET.SubElement(parts, "PART", mode="auto") #use ElementTree to add mode='auto'
         ET.SubElement(MAPSA, "KIND_OF_PART").text = "MaPSA"
         ET.SubElement(MAPSA, "NAME_LABEL").text = HPK_MapsaName(filename)
-        ET.SubElement(MAPSA, "MANUFACTURER").text = "Hamamatsu"
-        ET.SubElement(MAPSA, "LOCATION").text = "Hamamatsu"
+        ET.SubElement(MAPSA, "MANUFACTURER").text = Loc
+        ET.SubElement(MAPSA, "LOCATION").text = Loc
         ET.SubElement(MAPSA, "VERSION").text = "2.0"
         
         # MaPSA attributes
@@ -521,13 +522,17 @@ def HPK_getXML2(sheetname):
 
 ################################################################
 Loc = input('Enter LOCATION:')
-Loc_dict = {'H':'Hamamatsu','A':'AEMtec'}
+Loc_dict = {'H':'HAMAMATSU','A':'AEMtec'}
 Loc = Loc_dict[Loc]
+print(Loc)
 
 sheet_dict = {'A':'AEMnamelists.txt','B': 'MissingAEM.csv' ,'C':'HPKSheet1.csv', 'D':'hpk2.csv'}
 print(sheet_dict)
 sheetname = input('Which file:')
-sheetname = sheet_dict[sheetname]
+if sheetname in list(sheet_dict.keys()):
+    sheetname = sheet_dict[sheetname]
+else:
+    sheetname = sheetname
 
 if Loc == 'AEMtec':
     typeoffile = input('Is the input file in txt? [y/n]')
@@ -538,7 +543,7 @@ if Loc == 'AEMtec':
     elif typeoffile == 'n':
         AEM_csvgetXML(sheetname)
     
-elif Loc == 'Hamamatsu':
+elif Loc == 'HAMAMATSU':
     Chipnum = input('Is the chip name in rows, cols? [y/n]')
     if Chipnum == 'y':
         HPK_getXML1(sheetname)
